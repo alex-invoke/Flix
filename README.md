@@ -1,8 +1,10 @@
 # Flix 
 
 Flix is a simple iOS app for discovering popular and trending TV shows provided by the [The MovieDB API](https://developer.themoviedb.org/docs/getting-started). 
-![Discover](/screenshots/screenshot1.png)
-![Series Details](/screenshots/screenshot2.png)
+
+<img src="/screenshots/screenshot1.png" width="200">
+
+<img src="/screenshots/screenshot2.png" width="200">
 
 ## Goals/Features
 
