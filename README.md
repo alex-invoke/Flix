@@ -10,12 +10,12 @@ Flix is a simple iOS app for discovering popular and trending TV shows provided 
 
 The purpose of Flix is to be used as a demo project to experience with common app architecture patterns and SwiftUI features.
 
--[x] MVVM app architecture using SwiftUI
--[x] Leverage local SPM packages to modularize the app
--[x] Modern network layer abstraction leveraging async/await
--[] SwiftLint
--[] Improve accessibility
--[] Improve test coverage
+- [x] MVVM app architecture using SwiftUI
+- [x] Leverage local SPM packages to modularize the app
+- [x] Modern network layer abstraction leveraging async/await
+- [ ] SwiftLint
+- [ ] Improve accessibility
+- [ ] Improve test coverage
 
 ## API Token
 
