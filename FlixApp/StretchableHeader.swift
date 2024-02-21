@@ -1,10 +1,3 @@
-//
-//  StretchableHeader.swift
-//  Flix
-//
-//  Created by alex on 1/12/24.
-//
-
 import SwiftUI
 
 struct StretchableHeader<Content: View>: View {

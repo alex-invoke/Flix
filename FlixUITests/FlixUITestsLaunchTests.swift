@@ -1,10 +1,3 @@
-//
-//  FlixUITestsLaunchTests.swift
-//  FlixUITests
-//
-//  Created by alex on 1/10/24.
-//
-
 import XCTest
 
 final class FlixUITestsLaunchTests: XCTestCase {

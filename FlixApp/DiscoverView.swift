@@ -1,10 +1,3 @@
-//
-//  HomeView.swift
-//  Flix
-//
-//  Created by alex on 1/15/24.
-//
-
 import SwiftUI
 import FlixCore
 

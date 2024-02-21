@@ -1,10 +1,3 @@
-//
-//  FlixApp.swift
-//  Flix
-//
-//  Created by alex on 1/10/24.
-//
-
 import SwiftUI
 import FlixCore
 
@@ -26,8 +19,7 @@ struct FlixApp: App {
      */
     
     static var apiToken: String {
-        guard let token = ProcessInfo.processInfo.environment["MOVIEDB_API_TOKEN"] else {
-            fatalError("Expected environment variable for \"MOVIEDB_API_TOKEN\". See https://developer.apple.com/documentation/xcode/customizing-the-build-schemes-for-a-project#Specify-launch-arguments-and-environment-variables")
+        guard let token = ProcessInfo.processInfo.environment["MOVIEDB_API_TOKEN"] else {            fatalError("Expected environment variable for \"MOVIEDB_API_TOKEN\". See https://developer.apple.com/documentation/xcode/customizing-the-build-schemes-for-a-project#Specify-launch-arguments-and-environment-variables")
         }
         return token
     }

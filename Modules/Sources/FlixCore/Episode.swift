@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by alex on 1/15/24.
-//
-
 import Foundation
 
 // MARK: - Episode

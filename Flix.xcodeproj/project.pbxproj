@@ -13,14 +13,9 @@
 		FA8ECF092B51D6AC003CA303 /* EpisodeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8ECF082B51D6AC003CA303 /* EpisodeRowView.swift */; };
 		FAA24B812B5EBB4200811A43 /* BackdropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24B802B5EBB4200811A43 /* BackdropView.swift */; };
 		FAA24B832B5EBE7E00811A43 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24B822B5EBE7E00811A43 /* TitleView.swift */; };
-		FAA24B852B6015CE00811A43 /* MovieDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA24B842B6015CE00811A43 /* MovieDBTests.swift */; };
 		FAA24B872B605F1D00811A43 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = FAA24B862B605F1D00811A43 /* Network */; };
 		FAB4AE2C2B4EEDAA006B0DDD /* Styles in Frameworks */ = {isa = PBXBuildFile; productRef = FAB4AE2B2B4EEDAA006B0DDD /* Styles */; };
 		FAB4AE2F2B4EEED9006B0DDD /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = FAB4AE2E2B4EEED9006B0DDD /* Analytics */; };
-		FAB4AE382B4EEF70006B0DDD /* StylesPreviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4AE372B4EEF70006B0DDD /* StylesPreviewApp.swift */; };
-		FAB4AE3A2B4EEF70006B0DDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4AE392B4EEF70006B0DDD /* ContentView.swift */; };
-		FAB4AE3C2B4EEF71006B0DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB4AE3B2B4EEF71006B0DDD /* Assets.xcassets */; };
-		FAB4AE3F2B4EEF71006B0DDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB4AE3E2B4EEF71006B0DDD /* Preview Assets.xcassets */; };
 		FABFE3692B55B76B00505ED7 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFE3682B55B76B00505ED7 /* DiscoverView.swift */; };
 		FABFE36B2B55C1A800505ED7 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFE36A2B55C1A800505ED7 /* Carousel.swift */; };
 		FAE02FD52B570354003EF99B /* FlixCore in Frameworks */ = {isa = PBXBuildFile; productRef = FAE02FD42B570354003EF99B /* FlixCore */; };
@@ -57,13 +52,7 @@
 		FA8ECF082B51D6AC003CA303 /* EpisodeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRowView.swift; sourceTree = "<group>"; };
 		FAA24B802B5EBB4200811A43 /* BackdropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropView.swift; sourceTree = "<group>"; };
 		FAA24B822B5EBE7E00811A43 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
-		FAA24B842B6015CE00811A43 /* MovieDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBTests.swift; sourceTree = "<group>"; };
 		FAB4AE292B4EEC96006B0DDD /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = "<group>"; };
-		FAB4AE352B4EEF70006B0DDD /* StylesPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StylesPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAB4AE372B4EEF70006B0DDD /* StylesPreviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylesPreviewApp.swift; sourceTree = "<group>"; };
-		FAB4AE392B4EEF70006B0DDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FAB4AE3B2B4EEF71006B0DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FAB4AE3E2B4EEF71006B0DDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FABFE3682B55B76B00505ED7 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		FABFE36A2B55C1A800505ED7 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 		FAF89A522B4EEC0F001C7895 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,13 +67,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FAB4AE322B4EEF70006B0DDD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FAF89A4F2B4EEC0F001C7895 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -120,38 +102,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FAB4AE362B4EEF70006B0DDD /* StylesPreview */ = {
-			isa = PBXGroup;
-			children = (
-				FAB4AE372B4EEF70006B0DDD /* StylesPreviewApp.swift */,
-				FAB4AE392B4EEF70006B0DDD /* ContentView.swift */,
-				FAB4AE3B2B4EEF71006B0DDD /* Assets.xcassets */,
-				FAB4AE3D2B4EEF71006B0DDD /* Preview Content */,
-			);
-			path = StylesPreview;
-			sourceTree = "<group>";
-		};
-		FAB4AE3D2B4EEF71006B0DDD /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FAB4AE3E2B4EEF71006B0DDD /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		FAB4AE612B4EEFE4006B0DDD /* Preview Apps */ = {
-			isa = PBXGroup;
-			children = (
-				FAB4AE362B4EEF70006B0DDD /* StylesPreview */,
-			);
-			name = "Preview Apps";
-			sourceTree = "<group>";
-		};
 		FAF89A492B4EEC0F001C7895 = {
 			isa = PBXGroup;
 			children = (
 				FA3C86672B62BC3800622ED8 /* README.md */,
-				FAB4AE612B4EEFE4006B0DDD /* Preview Apps */,
 				FAB4AE292B4EEC96006B0DDD /* Modules */,
 				FAF89A542B4EEC0F001C7895 /* FlixApp */,
 				FAF89A652B4EEC10001C7895 /* FlixTests */,
@@ -167,7 +121,6 @@
 				FAF89A522B4EEC0F001C7895 /* Flix.app */,
 				FAF89A622B4EEC10001C7895 /* FlixTests.xctest */,
 				FAF89A6C2B4EEC10001C7895 /* FlixUITests.xctest */,
-				FAB4AE352B4EEF70006B0DDD /* StylesPreview.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				FAF89A662B4EEC10001C7895 /* FlixTests.swift */,
-				FAA24B842B6015CE00811A43 /* MovieDBTests.swift */,
 			);
 			path = FlixTests;
 			sourceTree = "<group>";
@@ -219,23 +171,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FAB4AE342B4EEF70006B0DDD /* StylesPreview */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAB4AE562B4EEF71006B0DDD /* Build configuration list for PBXNativeTarget "StylesPreview" */;
-			buildPhases = (
-				FAB4AE312B4EEF70006B0DDD /* Sources */,
-				FAB4AE322B4EEF70006B0DDD /* Frameworks */,
-				FAB4AE332B4EEF70006B0DDD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = StylesPreview;
-			productName = StylesPreview;
-			productReference = FAB4AE352B4EEF70006B0DDD /* StylesPreview.app */;
-			productType = "com.apple.product-type.application";
-		};
 		FAF89A512B4EEC0F001C7895 /* Flix */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAF89A762B4EEC10001C7895 /* Build configuration list for PBXNativeTarget "Flix" */;
@@ -305,9 +240,6 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					FAB4AE342B4EEF70006B0DDD = {
-						CreatedOnToolsVersion = 15.0;
-					};
 					FAF89A512B4EEC0F001C7895 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -340,21 +272,11 @@
 				FAF89A512B4EEC0F001C7895 /* Flix */,
 				FAF89A612B4EEC10001C7895 /* FlixTests */,
 				FAF89A6B2B4EEC10001C7895 /* FlixUITests */,
-				FAB4AE342B4EEF70006B0DDD /* StylesPreview */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FAB4AE332B4EEF70006B0DDD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAB4AE3F2B4EEF71006B0DDD /* Preview Assets.xcassets in Resources */,
-				FAB4AE3C2B4EEF71006B0DDD /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FAF89A502B4EEC0F001C7895 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -381,15 +303,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FAB4AE312B4EEF70006B0DDD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAB4AE3A2B4EEF70006B0DDD /* ContentView.swift in Sources */,
-				FAB4AE382B4EEF70006B0DDD /* StylesPreviewApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FAF89A4E2B4EEC0F001C7895 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -410,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA24B852B6015CE00811A43 /* MovieDBTests.swift in Sources */,
 				FAF89A672B4EEC10001C7895 /* FlixTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,64 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		FAB4AE572B4EEF71006B0DDD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StylesPreview/Preview Content\"";
-				DEVELOPMENT_TEAM = Q6742KPJHQ;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.invoke.StylesPreview;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FAB4AE582B4EEF71006B0DDD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StylesPreview/Preview Content\"";
-				DEVELOPMENT_TEAM = Q6742KPJHQ;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.invoke.StylesPreview;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		FAF89A742B4EEC10001C7895 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -754,15 +608,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAB4AE562B4EEF71006B0DDD /* Build configuration list for PBXNativeTarget "StylesPreview" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAB4AE572B4EEF71006B0DDD /* Debug */,
-				FAB4AE582B4EEF71006B0DDD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		FAF89A4D2B4EEC0F001C7895 /* Build configuration list for PBXProject "Flix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

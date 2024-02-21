@@ -1,10 +1,3 @@
-//
-//  TitleView.swift
-//  Flix
-//
-//  Created by alex on 1/22/24.
-//
-
 import SwiftUI
 
 struct TitleView: View {

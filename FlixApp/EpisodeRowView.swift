@@ -1,10 +1,3 @@
-//
-//  EpisodeView.swift
-//  Flix
-//
-//  Created by alex on 1/12/24.
-//
-
 import SwiftUI
 
 struct EpisodeRowView<Cover: View>: View {

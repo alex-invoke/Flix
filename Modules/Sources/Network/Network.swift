@@ -1,7 +1,3 @@
-//
-//  Created by alex on 1/10/24.
-//
-
 import Foundation
 
 public enum HTTPMethod: String, CustomStringConvertible {
@@ -73,59 +69,47 @@ public struct Endpoint {
     }
 }
 
-//public extension Endpoint {
-//    func makeRequest(baseURL: URL, additionHeaders: [String: String] = [:]) -> URLRequest? {
-//        guard var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: false) else { fatalError("invalid base url") }
-//        let queryItems = params.map { URLQueryItem(name: $0, value: $1) }
-//        //var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: false)
-////        components.scheme = "https"
-////        components.host = host
-//        components.path = path
-//        components.queryItems = queryItems.isEmpty ? nil : queryItems
-//        
-//        // If either the path or the query items passed contained
-//        // invalid characters, we'll get a nil URL back:
-//        guard let url = components.url else { return nil }
-//        var request = URLRequest(url: url)
-//        request.httpMethod = method.description
-//        for header in additionHeaders {
-//            request.setValue(header.value, forHTTPHeaderField: header.key)
-//        }
-//        headers.forEach { request.addValue($1, forHTTPHeaderField: $0)}
-//        return request
-//    }
-//}
-
-//public protocol APIClient {
-//    var baseURL: URL { get }
-//    var additionalHeaders: [String:String] { get }
-//    var decoder: JSONDecoder { get }
-//    var configuration: APIConfiguration { get }
-//    
-//    func fetch<T: Codable>(type: T.Type, with endpoint: Endpoint) async throws -> T
-//}
-
-/*
- send - GET/POST/PUT/DELETE
- upload - file upload
- download - file download
- */
-
 public struct APIClient {
-    var configuration: APIConfiguration //{ get }
+    var configuration: APIConfiguration 
     
     public init(configuration: APIConfiguration) {
         self.configuration = configuration
     }
     
-//    func send<T>(with endpoint: Endpoint, configure: ((inout URLRequest) throws -> Void)?) async throws -> T where T: Decodable
-//    func makeRequest(for endpoint: Endpoint, with configuration: APIConfiguration) throws -> URLRequest
-//}
-
-//public extension APIClient {
+//    public func send<T>(for endpoint: Endpoint, configure: ((inout URLRequest) throws -> Void)? = nil) async throws -> T where T: Decodable {
+//        var request = try makeRequest(for: endpoint)
+//        try configure?(&request)
+//        let (data, response) = try await configuration.session.data(for: request)
+//        guard let httpResponse = response as? HTTPURLResponse else { throw APIError.nonHTTPResponse }
+//        guard httpResponse.statusCode >= 200 && httpResponse.statusCode < 400 else { throw APIError.requestFailed(httpResponse.statusCode) }
+//        
+//        do {
+//            return try configuration.decoder.decode(T.self, from: data)
+//        } catch let error as DecodingError {
+//            throw APIError.decodingError(error)
+//        } catch {
+//            throw APIError.networkError(error)
+//        }
+//    }
     public func send<T>(for endpoint: Endpoint, configure: ((inout URLRequest) throws -> Void)? = nil) async throws -> T where T: Decodable {
         var request = try makeRequest(for: endpoint)
         try configure?(&request)
+        //        let (data, response) = try await configuration.session.data(for: request)
+        //        guard let httpResponse = response as? HTTPURLResponse else { throw APIError.nonHTTPResponse }
+        //        guard httpResponse.statusCode >= 200 && httpResponse.statusCode < 400 else { throw APIError.requestFailed(httpResponse.statusCode) }
+        //
+        //        do {
+        //            return try configuration.decoder.decode(T.self, from: data)
+        //        } catch let error as DecodingError {
+        //            throw APIError.decodingError(error)
+        //        } catch {
+        //            throw APIError.networkError(error)
+        //        }
+        
+        return try await send(with: request)
+    }
+    
+    public func send<T>(with request: URLRequest) async throws -> T where T: Decodable {
         let (data, response) = try await configuration.session.data(for: request)
         guard let httpResponse = response as? HTTPURLResponse else { throw APIError.nonHTTPResponse }
         guard httpResponse.statusCode >= 200 && httpResponse.statusCode < 400 else { throw APIError.requestFailed(httpResponse.statusCode) }

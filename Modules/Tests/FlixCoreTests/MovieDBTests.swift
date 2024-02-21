@@ -1,13 +1,5 @@
-//
-//  MovieDBTests.swift
-//  FlixTests
-//
-//  Created by alex on 1/23/24.
-//
-
 import XCTest
-@testable import Flix
-@testable import MovieDB
+@testable import FlixCore
 
 final class MovieDBTests: XCTestCase {
     
@@ -17,7 +9,7 @@ final class MovieDBTests: XCTestCase {
     }
     
     func testRequest() throws {
-        let client = MovieDBClient(token: "TEST")
+        let client =  MovieDBClient(token: "TEST")
         let request = try client.makeRequest(for: .popular(), with: client.configuration)
         XCTAssertEqual(request.url?.absoluteString, "https://api.themoviedb.org/3/tv/popular")
     }

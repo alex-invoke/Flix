@@ -32,5 +32,6 @@ let package = Package(
         .target(
             name: "FlixCore", dependencies: ["Network"]),
         .testTarget(name: "NetworkTests", dependencies: ["Network"]),
+        .testTarget(name: "FlixCoreTests", dependencies: ["FlixCore"]),
     ]
 )

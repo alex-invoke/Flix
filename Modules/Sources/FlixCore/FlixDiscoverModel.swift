@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by alex on 1/23/24.
-//
-
 import Foundation
 import Observation
 
